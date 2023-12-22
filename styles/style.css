@@ -9,7 +9,6 @@ html {
 }
 body {
   margin: 0;
-  
 }
 .page {
   inline-size: 1200px;
@@ -22,7 +21,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* margin: auto; */
 }
 
 h1,
@@ -85,7 +83,7 @@ ol {
   height: 298px;
   flex-direction: column;
   align-items: flex-start;
-  overflow-y: scroll;
+  overflow: auto;
   position: relative;
 }
 
@@ -125,7 +123,7 @@ ol {
 .search-form__fieldset-title {
   color: #fff;
 
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -133,7 +131,7 @@ ol {
 }
 .title {
   color: #545050;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -142,7 +140,7 @@ ol {
 }
 .content__accent {
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -155,7 +153,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -166,7 +164,7 @@ ol {
 .content__video-card-description {
   color: #fff;
 
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -203,7 +201,7 @@ fieldset {
 .search-form__textfield {
   color: rgba(255, 255, 255, 0.7);
 
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -244,7 +242,7 @@ fieldset {
   background-color: transparent;
   color: #fff;
   text-align: center;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -269,7 +267,7 @@ fieldset {
 
 .button:focus-visible {
   outline: 1px solid #fff;
-  outline-offset: 1px;
+  outline-offset: -2px;
 }
 
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
@@ -281,8 +279,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 }
 
 .button:hover,
-.content__card-link:hover,
-.search-form__label-text:hover {
+.content__card-link:hover {
   text-decoration: underline;
 }
 .button:active,
@@ -314,3 +311,10 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
+.search-form__label:has(input[type="checkbox"]):has(:hover) {
+  text-decoration: underline;
+}
+
+
+/* Изображения и видео подогнаны под заданные размеры через object-fit.
+Подчеркивание у кнопок и чекбоксов появляется при наведении на всю активную зону (включая сам чекбокс), а не только на текст */
