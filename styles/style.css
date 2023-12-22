@@ -45,6 +45,7 @@ ol {
   box-sizing: border-box;
   padding: 133px 30px  133px 30px;
   max-height: 800px;
+  margin-top: 133px;
 }
 
 .result {
