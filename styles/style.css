@@ -16,10 +16,6 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  box-sizing: border-box;
-  padding: 133px 30px  133px 30px;
-  max-width: 1200px;
-  max-height: 800px;
 }
 
 h1,
@@ -46,8 +42,9 @@ ol {
   justify-content: center;
   align-items: flex-end;
   gap: 30px;
-
-  /* position: relative; */
+  box-sizing: border-box;
+  padding: 133px 30px  133px 30px;
+  max-height: 800px;
 }
 
 .result {
