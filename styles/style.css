@@ -43,8 +43,8 @@ ol {
   align-items: flex-end;
   gap: 30px;
   box-sizing: border-box;
-  padding: 133px 30px;
-  position: relative;
+  padding: 133px 30px  133px 30px;
+  /* position: relative; */
 }
 
 .result {
