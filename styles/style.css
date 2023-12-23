@@ -314,7 +314,3 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 .search-form__label:has(input[type="checkbox"]):has(:hover) {
   text-decoration: underline;
 }
-
-
-/* Изображения и видео подогнаны под заданные размеры через object-fit.
-Подчеркивание у кнопок и чекбоксов появляется при наведении на всю активную зону (включая сам чекбокс), а не только на текст */
