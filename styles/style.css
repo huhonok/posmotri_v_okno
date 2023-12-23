@@ -265,7 +265,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
   outline: 1px solid black;
   outline-offset: -2px;
   background-color: #fff;
-  content: "";  
+  content: "";
 }
 
 .button:hover,
@@ -276,7 +276,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
 .button:active,
 .content__card-link:active {
   background-color: #545050;
-  /* text-decoration: none; */
 }
 
 .search-form__textfield:active {
